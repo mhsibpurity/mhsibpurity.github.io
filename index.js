@@ -7,7 +7,7 @@ const clear_btn = document.querySelector("#clear")
 to_hide_div.style.display = "block"
 to_show_div.style.display = "none"
 
-calculate_score_btn.addEventListener("click", () => {
+calculate_score_btn.addEventListener("click", () => { // sexy aah arrow function
     let purity = 100 - document.querySelectorAll('input[type="checkbox"]:checked').length
     document.querySelector("#score").innerHTML = purity
     to_hide_div.style.display = "none"
