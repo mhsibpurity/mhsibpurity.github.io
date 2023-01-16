@@ -1,0 +1,36 @@
+html {
+    background-color: #FBEEC8;
+    background-image: url("imgs/mhs_logo_grey.png");
+}
+
+body {
+    text-align: center;
+}
+#list {
+    text-align: left;
+}
+h1 {
+    font-size: 300%;
+    font-weight: bold;
+    color: red;
+    padding:0px;
+    margin:0px;
+}
+
+.button {
+    text-align: center;
+    width: 10%;
+    border-radius: 20px;
+    background-color: rgba(255, 119, 100, 0.3);
+    color: rgb(0, 0, 5);
+    position: relative;
+    left: 200px;
+}
+
+#reset {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
