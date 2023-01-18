@@ -13,11 +13,11 @@ calculate_score_btn.addEventListener("click", () => { // sexy aah arrow function
     to_hide_div.style.display = "none"
     to_show_div.style.display = "block"
 
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-    var img = document.getElementById("result");
-    ctx.drawImage(img, 0, 0);
-    ctx.font = "100px Helvetica";
+    let c = document.getElementById("myCanvas");
+    let ctx = c.getContext("2d");
+    let img = document.getElementById("result");
+    ctx.drawImage(img, 0, 0, 640, 360);
+    ctx.font = "50px Helvetica";
     // Create gradient
     var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
     gradient.addColorStop("0"," magenta");
@@ -26,9 +26,9 @@ calculate_score_btn.addEventListener("click", () => { // sexy aah arrow function
     // Fill with gradient
     ctx.fillStyle = gradient;
     ctx.textAlign = "center"
-    ctx.fillText("I am " +  purity + "% pure!", 640, 150);
-    ctx.font = "40px Helvetica";
-    ctx.fillText("Test your purity at https://mhsibpurity.github.io/", 640, 650);
+    ctx.fillText("I am " +  purity + "% pure!", 320, 75);
+    ctx.font = "20px Helvetica";
+    ctx.fillText("Test your purity at https://mhsibpurity.github.io/", 320, 325);
 })
 
 reset_btn.addEventListener("click", () => {

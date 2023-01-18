@@ -8,19 +8,22 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-5NL619F2YT');
         </script>
+
+        <!-- title config stuff -->
         <link rel="icon" href="imgs/favicon.ico">
         <link rel="stylesheet" href="style.css">
         <title>MHS IB Purity Test</title> 
     </head>
+    
     <!-- the following will be hidden on the button press -->
     <div id = "tohide">
         <p><img src="imgs\title.png" id="title" width="957" height="193"></p>
-        <img class="hidden" id="result" src="imgs\result.png">
-        <p><strong>Caution: This is not a bucket list. Completion of all items on this test will likely result in death.</strong></p>
+        <img class="hidden" id="result" src="imgs\result.png" height = "640" width = "360">
+        <p><strong>Caution: This is not a bucket list. Completion of all items on this test will likely result in expulsion.</strong></p>
         <p><strong>Click on every item you have completed</strong></p>
+
         <!-- list of the things -->
         <div id="list">
             <ol>
@@ -137,7 +140,7 @@
         <h2 id="test">Your score:</h2>
         <h1 id="score"></h1>
         <input class = "button" id = "reset" type="submit" value="Reset">
-        <canvas id="myCanvas" width="1280" height="720"></canvas>
+        <canvas id="myCanvas" width="640" height="360"></canvas>
     </div>
     <script src="index.js"></script>
 

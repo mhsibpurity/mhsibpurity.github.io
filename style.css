@@ -35,6 +35,10 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+#myCanvas {
+    padding-top:40px;  
+}
+
 .hidden {
   display: none;
 }
