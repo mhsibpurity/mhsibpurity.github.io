@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <!-- the following will be hidden on the button press -->
-    <div id = "tohide"> 
+    <div id = "tohide">
         <!-- header stuff -->
         <head>
             <link rel="icon" href="imgs/favicon.ico">
             <link rel="stylesheet" href="style.css">
             <title>MHS IB Purity Test</title>
-            <p><img src="imgs\title.png" width="957" height="193"></p>
+            <p><img src="imgs\title.png" id="title" width="957" height="193"></p>
+            <img class="hidden" id="result" src="imgs\result.png">
             <p><strong>Caution: This is not a bucket list. Completion of all items on this test will likely result in death.</strong></p>
             <p><strong>Click on every item you have completed</strong></p>
         </head>
@@ -48,7 +49,7 @@
                 <li> <input type="checkbox" id="30"> Had Mr.Quast?
                 <li> <input type="checkbox" id="31"> HL Math?
                 <li> <input type="checkbox" id="32"> Chatted during a test?
-                <li> <input type="checkbox" id="33"> Plagarized? 
+                <li> <input type="checkbox" id="33"> Plagarized?
                 <li> <input type="checkbox" id="34"> Made animal sounds during class?
                 <li> <input type="checkbox" id="35"> Caught eating food in the library?
                 <li> <input type="checkbox" id="36"> Almost run over crossing merivale road?
@@ -70,8 +71,8 @@
                 <li> <input type="checkbox" id="52"> Failed DELF?
                 <li> <input type="checkbox" id="53"> Said you would "sac" IB exams?
                 <li> <input type="checkbox" id="54"> Complained about school funding?
-                <li> <input type="checkbox" id="55"> Asian? 
-                <li> <input type="checkbox" id="56"> First / Second gen immigrant? 
+                <li> <input type="checkbox" id="55"> Asian?
+                <li> <input type="checkbox" id="56"> First / Second gen immigrant?
                 <li> <input type="checkbox" id="57"> Listen to kpop?
                 <li> <input type="checkbox" id="58"> Listen to anime openings?
                 <li> <input type="checkbox" id="59"> Watch anime?
@@ -99,8 +100,8 @@
                 <li> <input type="checkbox" id="81"> Asked someone if they are chinese?
                 <li> <input type="checkbox" id="82"> Have your G1?
                 <li> <input type="checkbox" id="83"> Have your G2?
-                <li> <input type="checkbox" id="84"> Regretted group 3 choice (social sciences)? 
-                <li> <input type="checkbox" id="85"> Considered suicide? 
+                <li> <input type="checkbox" id="84"> Regretted group 3 choice (social sciences)?
+                <li> <input type="checkbox" id="85"> Considered suicide?
                 <li> <input type="checkbox" id="86"> Sexually attracted to a teacher?
                 <li> <input type="checkbox" id="87"> Orgasmed on an IB textbook?
                 <li> <input type="checkbox" id="88"> Got in a physical fight?
@@ -108,7 +109,7 @@
                 <li> <input type="checkbox" id="90"> Has friends of opposite sex?
                 <li> <input type="checkbox" id="91"> Held eyecontact with MPS (member of preferred sex)?
                 <li> <input type="checkbox" id="92"> Held hands romantically?
-                <li> <input type="checkbox" id="93"> Had first hug?           
+                <li> <input type="checkbox" id="93"> Had first hug?
                 <li> <input type="checkbox" id="94"> Had first kiss?
                 <li> <input type="checkbox" id="95"> Slept with someone?
                 <li> <input type="checkbox" id="96"> Slept with a transfer student?
@@ -129,8 +130,8 @@
         <h2 id="test">Your score:</h2>
         <h1 id="score"></h1>
         <input class = "button" id = "reset" type="submit" value="Reset">
+        <canvas id="myCanvas" width="1280" height="720"></canvas>
     </div>
-
     <script src="index.js"></script>
-    
+
 </html>

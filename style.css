@@ -31,6 +31,10 @@ h1 {
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 95%;
     transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
 }
